@@ -1,0 +1,372 @@
+#home{
+  @include parent;
+  padding-inline: var(--margin-global);
+  gap: 4em;
+  padding-top: 150px;
+  padding-bottom: 307px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  .section1-my-event{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0px;
+
+    .max-div{
+      max-width: 1200px;
+      width: 100%;
+    }
+
+    .title-my-event{
+      --c:#fff;
+      text-transform: uppercase;
+      font-family:var(--font1);
+      --fw: 700;
+      letter-spacing: 15px;
+      position: relative;
+      padding-bottom: 4px;
+      text-align: center;
+      margin-bottom: 100px;
+    }
+
+    .autocomplete-search{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+
+      .autocomplete{
+        max-width: 30%;
+        background-color: var(--primary);
+        border-radius: 0;
+        height: 50px;
+        padding-left:20px;
+        padding-right: 20px;
+
+        .mdi-menu-down{
+          color: #fff;
+          font-size: 40px;
+        }
+
+        .mdi-menu-down::before{
+          color: #fff;
+          font-size: 40px;
+        }
+
+        .mdi-menu-down::after{
+          color: #fff;
+          font-size: 40px;
+        }
+
+        label{
+          --c:#fff;
+          --fw: 300;
+          font-family: var(--font2);
+          font-size: 20px;
+        }
+      }
+
+      .textfield{
+        width: 60%;
+        background-color: var(--primary);
+        border-radius: 0;
+        height: 50px;
+        padding-left:20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        --c:#fff;
+        --fw: 300;
+        font-family: var(--font2);
+
+        .mdi-magnify{
+          color: #fff;
+          font-size: 30px;
+          border-left: solid 1px #fff;
+          padding-left: 10px;
+        }
+
+        .mdi-magnify::before{
+          color: #fff;
+          font-size: 30px;
+        }
+
+        .mdi-magnify::after{
+          color: #fff;
+          font-size: 30px;
+        }
+
+        label{
+          --c:#fff;
+          --fw: 300;
+          font-family: var(--font2);
+          font-size: 20px;
+        }
+      }
+    }
+
+    hr{
+      width: 100%;
+      border: 1px solid var(--secondary);
+      margin-bottom: 100px;
+      margin-top: 30px;
+    }
+  }
+
+  .section2-my-event{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+    height: 1100px;
+
+    .my-events-div{
+      max-width: 1200px;
+      width: 100%;
+      height: 100px;
+      background-color: green;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .card-header{
+        background-color: var(--primary);
+        display: flex;
+        border-radius: 0px;
+        height: 100px;
+        justify-content: center;
+        align-items: center;
+
+        .span-title{
+          font-family: var(--font2);
+          --c:#fff;
+          --fw:500;
+          text-align:center;
+        }
+
+        .span-div{
+          width: 200px;
+          height: 100px;
+          display: grid;
+          place-items: center;
+        }
+
+        .empty-div{
+          width: 200px;
+          height: 100px;
+        }
+      }
+
+      .events-container{
+        min-height: 300px!important;
+        max-width: 1200px;
+        padding-left: 40px;
+        padding-right: 25px;
+        width: 100%;
+        background:#cd1a18;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 2px solid #e42924;
+
+        .card-photo{
+          max-width: 150px;
+          max-height: 150px;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          overflow: hidden;
+          box-shadow:  10px 10px 10px 10px rgba(0,0,0,0.2)!important;
+          z-index: 1;
+          border-radius: 0px;
+
+          img{
+            max-height: 320px;          
+            height: 320px;
+            width: 200px;
+          }
+
+          .name-div{
+            background-color: #fff;
+            height: 40px;
+            position: absolute;
+            width: 100%;
+            border-radius: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            bottom: 10px;
+
+            span{
+              --c:var(--secondary);
+              text-decoration: underline;
+              font-family: var(--font1);
+              --fw:500;
+            }
+          }
+        }
+
+        .fondo-boleto1{
+          background-color: #fff;
+          width: 40px;
+          height: 130px;
+          border-radius: 0px;
+          z-index: 0;
+        }
+
+        .card-dates{
+          max-width: 150px;
+          max-height: 150px;
+          width: 150px!important;
+          height: 150px;
+          border-radius: 0px;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          overflow: hidden;
+          box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.2)!important;
+          z-index: 1;
+          background-color: #fff;
+  
+          .day{
+            font-family: var(--font1);
+            --fw:500;
+            font-size: 24px;
+            margin-bottom: -10px;
+          }
+  
+          .month{
+            font-family: var(--font1);
+            --fw:500;
+            font-size: 20px;
+          }
+  
+          .time{
+            font-family: var(--font1);
+            --fw: 400;
+            font-size: 14px;
+            text-align: center;
+            max-width: 100px;
+            margin-bottom: 5px;
+          }
+  
+          .location{
+            font-family: var(--font1);
+            --fw: 400;
+            font-size: 13px;
+          }
+        }
+
+        .dotted-div{
+          background-color: #fff;
+          width: 40px;
+          height: 130px;
+          border-radius: 0px;
+          z-index: 0;
+          position: relative;
+          overflow: hidden;
+  
+          hr{
+            border-bottom: 7px dashed var(--primary);
+            border-top: none;
+            transform: rotate(90deg);
+            position: absolute;
+            width: 180px;
+            right: 0!important;
+            bottom: 0;
+            top: 0;
+            left: -70px;
+            margin: auto;
+  
+          }
+        }
+
+        .minted-card{
+          max-width: 150px;
+          max-height: 150px;
+          width: 150px!important;
+          height: 150px;
+          border-radius: 0px;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          overflow: hidden;
+          box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.2)!important;
+          z-index: 1;
+          background-color: #fff;
+
+          .span-main{
+            --c:#000;
+            --fw:400;
+            font-size: 28px;
+            margin-bottom: 30px;
+          }
+
+          .absolute-div{
+            background-color: #fff;
+            height: 40px;
+            position: absolute;
+            width: 100%;
+            border-radius: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            bottom: 10px;
+            box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.2)!important;
+
+            span{
+              --c:#000;
+              font-family: var(--font1);
+              --fw:400;
+            }
+          }
+        }
+
+        .btn:last-of-type{
+          background: var(--primary)!important;
+
+          .v-icon{
+            --c:#fff;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+////////Barrita transversal del input/////////
+//////////////////////////////////////////////
+
+
+.v-input__slot:before{
+  border-color: #fff!important;
+}
+
+.v-text-field > .v-input__control > .v-input__slot:before, 
+.v-text-field > .v-input__control > .v-input__slot:after {
+  width: 0%;
+}

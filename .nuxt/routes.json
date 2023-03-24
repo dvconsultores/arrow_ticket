@@ -1,0 +1,142 @@
+[
+  {
+    "name": "create-event___en",
+    "path": "/create-event",
+    "component": "/home/maria/Documentos/ArrowTickets/arrow_ticket/pages/create-event.vue",
+    "chunkName": "pages/create-event",
+    "_name": "_6ede9c88"
+  },
+  {
+    "name": "index___es",
+    "path": "/es",
+    "component": "/home/maria/Documentos/ArrowTickets/arrow_ticket/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_f5f0673a"
+  },
+  {
+    "name": "live-data___en",
+    "path": "/live-data",
+    "component": "/home/maria/Documentos/ArrowTickets/arrow_ticket/pages/live-data.vue",
+    "chunkName": "pages/live-data",
+    "_name": "_2793de7c"
+  },
+  {
+    "name": "login___en",
+    "path": "/login",
+    "component": "/home/maria/Documentos/ArrowTickets/arrow_ticket/pages/login.vue",
+    "chunkName": "pages/login",
+    "_name": "_4eaf6f7a"
+  },
+  {
+    "name": "my-event___en",
+    "path": "/my-event",
+    "component": "/home/maria/Documentos/ArrowTickets/arrow_ticket/pages/my-event.vue",
+    "chunkName": "pages/my-event",
+    "_name": "_6f3cf8b8"
+  },
+  {
+    "name": "nft___en",
+    "path": "/nft",
+    "component": "/home/maria/Documentos/ArrowTickets/arrow_ticket/pages/nft.vue",
+    "chunkName": "pages/nft",
+    "_name": "_1113f28d"
+  },
+  {
+    "name": "setting___en",
+    "path": "/setting",
+    "component": "/home/maria/Documentos/ArrowTickets/arrow_ticket/pages/setting.vue",
+    "chunkName": "pages/setting",
+    "_name": "_49de28a1"
+  },
+  {
+    "name": "ticket___en",
+    "path": "/ticket",
+    "component": "/home/maria/Documentos/ArrowTickets/arrow_ticket/pages/ticket.vue",
+    "chunkName": "pages/ticket",
+    "_name": "_6e954ccb"
+  },
+  {
+    "name": "ticket-detail___en",
+    "path": "/ticket-detail",
+    "component": "/home/maria/Documentos/ArrowTickets/arrow_ticket/pages/ticket-detail.vue",
+    "chunkName": "pages/ticket-detail",
+    "_name": "_060c867a"
+  },
+  {
+    "name": "create-event___es",
+    "path": "/es/create-event",
+    "component": "/home/maria/Documentos/ArrowTickets/arrow_ticket/pages/create-event.vue",
+    "chunkName": "pages/create-event",
+    "_name": "_6ede9c88"
+  },
+  {
+    "name": "live-data___es",
+    "path": "/es/live-data",
+    "component": "/home/maria/Documentos/ArrowTickets/arrow_ticket/pages/live-data.vue",
+    "chunkName": "pages/live-data",
+    "_name": "_2793de7c"
+  },
+  {
+    "name": "login___es",
+    "path": "/es/login",
+    "component": "/home/maria/Documentos/ArrowTickets/arrow_ticket/pages/login.vue",
+    "chunkName": "pages/login",
+    "_name": "_4eaf6f7a"
+  },
+  {
+    "name": "my-event___es",
+    "path": "/es/my-event",
+    "component": "/home/maria/Documentos/ArrowTickets/arrow_ticket/pages/my-event.vue",
+    "chunkName": "pages/my-event",
+    "_name": "_6f3cf8b8"
+  },
+  {
+    "name": "nft___es",
+    "path": "/es/nft",
+    "component": "/home/maria/Documentos/ArrowTickets/arrow_ticket/pages/nft.vue",
+    "chunkName": "pages/nft",
+    "_name": "_1113f28d"
+  },
+  {
+    "name": "setting___es",
+    "path": "/es/setting",
+    "component": "/home/maria/Documentos/ArrowTickets/arrow_ticket/pages/setting.vue",
+    "chunkName": "pages/setting",
+    "_name": "_49de28a1"
+  },
+  {
+    "name": "ticket___es",
+    "path": "/es/ticket",
+    "component": "/home/maria/Documentos/ArrowTickets/arrow_ticket/pages/ticket.vue",
+    "chunkName": "pages/ticket",
+    "_name": "_6e954ccb"
+  },
+  {
+    "name": "ticket-detail___es",
+    "path": "/es/ticket-detail",
+    "component": "/home/maria/Documentos/ArrowTickets/arrow_ticket/pages/ticket-detail.vue",
+    "chunkName": "pages/ticket-detail",
+    "_name": "_060c867a"
+  },
+  {
+    "name": "verification-email-verification___es",
+    "path": "/es/verification-email/:verification?",
+    "component": "/home/maria/Documentos/ArrowTickets/arrow_ticket/pages/verification-email/_verification.vue",
+    "chunkName": "pages/verification-email/_verification",
+    "_name": "_cc820ad8"
+  },
+  {
+    "name": "verification-email-verification___en",
+    "path": "/verification-email/:verification?",
+    "component": "/home/maria/Documentos/ArrowTickets/arrow_ticket/pages/verification-email/_verification.vue",
+    "chunkName": "pages/verification-email/_verification",
+    "_name": "_cc820ad8"
+  },
+  {
+    "name": "index___en",
+    "path": "/",
+    "component": "/home/maria/Documentos/ArrowTickets/arrow_ticket/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_f5f0673a"
+  }
+]

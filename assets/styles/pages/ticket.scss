@@ -1,0 +1,86 @@
+#home {
+  @include parent;
+  padding-inline: var(--margin-global);
+  gap: 4em;
+  padding-top: 150px;
+  padding-bottom: 307px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+
+  .section1-ticket{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    overflow: visible;
+
+    .title-ticket{
+      --c:#fff;
+      text-transform: uppercase;
+      font-family:var(--font1);
+      --fw: 700;
+      letter-spacing: 15px;
+      position: relative;
+      padding-bottom: 4px;
+      text-align: center;
+      margin-bottom: 100px;
+
+      @include media(max, 960px){
+        letter-spacing: 5px;
+      }
+    }
+
+    .container-slide{
+      background-color: #efefef;
+      margin-inline: calc(50% - 50vw);
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 0px;
+
+
+      .slide{  
+
+        .card-ticket{
+          margin: 0px 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: transparent;
+  
+          img{
+            max-width: 200px;
+
+            @include media(max, 450px){
+              max-width: 140px;
+            }
+          }
+        }
+      }
+    }
+
+    .dark-red{
+      background-color: var(--primary)!important;
+      max-width: 380px!important;
+      width: 380px!important;
+
+      @include media(max, 450px){
+        width: 250px!important;
+      }
+    }
+
+    .orange-btn{
+      max-width: 380px!important;
+      width: 380px!important;
+
+      @include media(max, 450px){
+        width: 250px!important;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,310 @@
+#home{
+  @include parent;
+  padding-inline: var(--margin-global);
+  gap: 4em;
+  padding-top: 150px;
+  padding-bottom: 307px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  .section1-setting{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+    padding-top: 0px;
+
+    .title-setting{
+      --c:#fff;
+      text-transform: uppercase;
+      font-family:var(--font1);
+      --fw: 700;
+      letter-spacing: 15px;
+      position: relative;
+      padding-bottom: 4px;
+      text-align: center;
+      margin-bottom: 100px;
+    }
+
+    h5{
+      --c:#fff;
+      --fw:500;
+      text-transform: uppercase;
+      text-align: left;
+      width: 100%;
+    }
+
+    hr{
+      width: 100%;
+      border: 1px solid var(--secondary);
+      margin-bottom: 100px;
+    }
+
+    .setting-card{
+      background-color: #fff;
+      border-radius: 0px;
+      box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.3)!important;
+      width: 400px;
+      max-width: 400px;
+      max-height: 600px;
+      height: max-content;
+      padding: 20px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 0px;
+
+      @include media(max, 450px){
+        max-width: 300px;
+        width: 100%;
+      }
+
+      .underline-text{
+        text-decoration: underline;
+        --fw: 700;
+        font-size: 1.6em;
+        margin-bottom: 5px;
+        font-family: var(--font2);
+        max-width: 340px!important;
+      }
+
+      .text{
+        font-family: var(--font2);
+        --fw: 500;
+        text-align: center;
+        max-width: 80%;
+        max-width: 340px!important;
+      }
+
+      .text2{
+        font-family: var(--font2);
+        --fw: 500;
+        text-align: left;
+        max-width: 80%;
+        max-width: 340px!important;
+        font-size: 1.25em;
+      }
+
+      .btn{
+        width: 170px!important;
+        border-radius: 0px!important;
+
+        @include media(max, 450px){
+          width: 125px!important;
+        }
+
+        @include media(max, 340px){
+          width: 90px!important;
+          font-size: 10px!important;
+          height: 50px!important;
+          min-height: 50px!important;
+        }
+      }
+
+      .btn-dark{
+        background-color: var(--primary)!important;
+      }
+
+      hr{
+        border-bottom: 10px dashed var(--primary);
+        border-top: none;
+        width: 112%;
+        margin-inline: calc(50% - 50vw);
+        margin-top: 40px;
+      }
+    }
+  }
+}
+
+
+
+/////////////////////////////////////////dialogssssss//////////////////////////////////
+/// 
+/// 
+
+
+.v-dialog{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+
+  .amount-card{
+    background-color: #fff;
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.3)!important;
+    border-radius: 0px;
+    width: 450px;
+    height: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    @include media(max, 490px){
+      max-width: 300px;
+      width: 100%;
+    }
+
+    .btn-close{
+      background-color: var(--primary);
+      width: 25px;
+      height: 25px;
+      min-height: 20px;
+      min-width: 20px;
+      padding: 0;
+      --c:#fff!important;
+      --fw:500;
+      font-size: 20px!important;
+      right: 10px;
+      top: 10px;
+      position: absolute;
+    }
+
+    .underline-text{
+      text-decoration: underline;
+      --fw: 700;
+      font-size: 1.5em;
+      margin-bottom: 5px;
+      font-family: var(--font2);
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .div-btns{
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 5px;
+      border-bottom: 1px solid var(--primary);
+      max-width: 360px;
+      width: 100%;
+      margin-bottom: 20px;
+
+      @include media(max, 490px){
+        width: 90%;
+      }
+
+      span{
+        --fw:700;
+        font-family: var(--font2);
+        font-size: 20px;
+      }
+    
+      .counter-btn{
+        width: 22px!important;
+        height: 22px!important;
+        min-height: 1px!important;
+        min-width: 1px!important;
+        padding: 0px!important;
+      }
+    }
+
+    hr{
+      border-bottom: 10px dashed var(--primary);
+      border-top: none;
+      width: 100%;
+      margin-inline: calc(50% - 50vw);
+      margin-top: 20px;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+
+.v-dialog{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+
+  .qr-card{
+    background-color: #fff;
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.3)!important;
+    border-radius: 0px;
+    width: 450px;
+    height: max-content;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 20px;
+
+    @include media(max, 490px){
+      max-width: 300px;
+      width: 100%;
+    }
+
+    .btn-close{
+      background-color: var(--primary);
+      width: 25px;
+      height: 25px;
+      min-height: 20px;
+      min-width: 20px;
+      padding: 0;
+      --c:#fff!important;
+      --fw:500;
+      font-size: 20px!important;
+      right: 10px;
+      top: 10px;
+      position: absolute;
+    }
+
+    .card-title{
+      width: 550px;
+      background-color: #fff;
+      border-radius: 0px;
+      box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.3)!important;
+      padding: 10px 30px;
+      position: relative;
+      z-index: 99;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+      position: absolute;
+      left: -50px;
+      top: 45px;
+
+      @include media(max, 580px){
+        max-width: 450px;
+        width: 100%;
+        left: 0px;
+      }
+
+      span{
+        text-decoration: underline;
+        --fw: 700;
+        font-size: 1.6em;
+        margin-bottom: 5px;
+        font-family: var(--font2);
+      }
+
+      p{
+        font-family: var(--font2);
+        --fw: 500;
+        text-align: center;
+      }
+    }
+
+    hr{
+      border-bottom: 10px dashed var(--primary);
+      border-top: none;
+      width: 110%;
+      margin-inline: calc(50% - 50vw);
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .btn{
+      max-width: 360px;
+      width: 100%!important;
+    }
+  }
+}

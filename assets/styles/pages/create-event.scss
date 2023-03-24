@@ -1,0 +1,802 @@
+#home {
+  @include parent;
+  padding-inline: var(--margin-global);
+  gap: 4em;
+  padding-top: 150px;
+  padding-bottom: 307px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  .section1-create{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+    padding-top: 0px;
+
+    .title-create{
+      --c:#fff;
+      text-transform: uppercase;
+      font-family:var(--font1);
+      --fw: 700;
+      letter-spacing: 15px;
+      position: relative;
+      padding-bottom: 4px;
+      text-align: center;
+      margin-bottom: 100px;
+    }
+
+    .card-create{
+      background-color: #fff;
+      border-radius: 0px;
+      box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.3)!important;
+      width: 100%;
+      max-width: 400px;
+      max-height: 850px;
+      height: max-content;
+      // overflow-y: scroll;
+      padding: 20px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 0;
+      // margin: 0px 20px 0px 20px;
+
+      @include media(max, 490px){
+        width: 100%;
+        max-width: 300px;
+      }
+
+      .underline-span{
+        text-decoration: underline;
+        --fw: 700;
+        font-size: 1.6em;
+        margin-bottom: 5px;
+        font-family: var(--font2);
+        max-width: 340px!important;
+      }
+
+      .text{
+        font-family: var(--font2);
+        --fw: 500;
+        text-align: center;
+        max-width: 80%;
+        max-width: 340px!important;
+      }
+
+      .v-window{
+        overflow: visible;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+/////////////////////////////////////value1/////////////////////////////////////////
+
+
+        .value1{
+          .card-title{
+            width: 550px;
+            background-color: #fff;
+            border-radius: 0px;
+            box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.3)!important;
+            padding: 10px 30px;
+            position: relative;
+            z-index: 99;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            position: absolute;
+            left: -100px;
+            top: 0;
+
+            @include media(max, 630px){
+              max-width: 400px;
+              width: 100%;
+              left: 0;
+            }
+    
+            span{
+              text-decoration: underline;
+              --fw: 700;
+              font-size: 1.6em;
+              margin-bottom: 5px;
+              font-family: var(--font2);
+            }
+    
+            p{
+              font-family: var(--font2);
+              --fw: 500;
+              text-align: center;
+            }
+          }
+    
+          .content-card{
+            height: 680px;
+            max-height: 680px;
+            overflow-y: scroll;
+            width: 100%;
+            display: grid;
+            place-items: center;
+            padding-top: 150px;
+
+            @include media(max, 430px){
+              padding-top: 220px;
+            }
+            
+    
+            .text-field-container{
+              margin-bottom: 20px;
+              max-width:340px;
+              width: 100%;
+    
+    
+              .title-textfield{
+                font-family: var(--font2);
+                --c:#000;
+                --fw:500;
+                font-size: 1.3em;
+              }
+    
+              .input-line{
+                font-family: var(--font2);
+    
+                ::placeholder{
+                  color: rgba(0,0,0,0.3);
+                  font-family: var(--font2);    
+                }
+              }
+              
+            }
+    
+            .textarea-container{
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              margin-top: 20px;
+              margin-bottom: 30px;
+              max-width: 340px;
+    
+              .v-input__slot:before{
+                border-color: #fff;
+              }
+              
+              .v-text-field > .v-input__control > .v-input__slot:before, 
+              .v-text-field > .v-input__control > .v-input__slot:after {
+                width: 0%;
+              }
+    
+              .input-area{
+                box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.3)!important;
+                height: 130px;
+                padding-left: 10px;
+                padding-right: 10px;
+                max-width:340px;
+                width: 100%;
+                font-size: 14px; 
+                font-family: var(--font2);
+    
+                #input-43{
+                  max-height: 110px;
+                  line-height: 17px;
+                }
+    
+                ::placeholder{
+                  color: rgba(0,0,0,0.3);
+                  font-family: var(--font2);
+                  font-size: 14px;  
+                }
+              }
+            }
+          }
+        }
+
+        .value2{
+
+/////////////////////////////////////value2/////////////////////////////////////////
+
+
+          .card-title{
+            width: 550px;
+            background-color: #fff;
+            border-radius: 0px;
+            box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.3)!important;
+            padding: 10px 30px;
+            position: relative;
+            z-index: 99;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            position: absolute;
+            top: 0;
+            left: -100px;
+
+            @include media(max, 630px){
+              max-width: 400px;
+              width: 100%;
+              left: 0;
+            }
+
+            span{
+              text-decoration: underline;
+              --fw: 700;
+              font-size: 1.6em;
+              margin-bottom: 5px;
+              font-family: var(--font2);
+            }
+    
+            p{
+              font-family: var(--font2);
+              --fw: 500;
+              text-align: center;
+            }
+          }
+
+          .content-step2{
+            height: 480px;
+            max-height: 480px;
+            width: 100%;
+            display: grid;
+            place-items: center;
+            padding-top: 150px;
+
+            // @include media(max, 430px){
+            //   padding-top: 220px;
+            // }
+
+            .v-text-field > .v-input__control > .v-input__slot:before, .v-text-field > .v-input__control > .v-input__slot:after {
+              width: 0%;
+            }
+
+            .file-div{
+              max-width: 360px;
+              width: 100%;
+              position: relative;
+
+              .icon-file{
+                position: absolute;
+                top: 0;
+                bottom: 75px;
+                left: 0;
+                right: 0;
+                margin: auto;
+                color: rgba(0,0,0,0.5);
+              }
+
+              .input-file{
+                max-width: 360px;
+                width: 100%;
+                height: 150px;
+                box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.3)!important;
+                color: rgba(0,0,0,0.1)!important;
+                font-family: var(--font2); 
+                text-align: center; 
+
+                .v-file-input__text{
+                  height: 130px;
+                }
+
+                .mdi-paperclip::before {
+                  content: "\F03E2";
+                  display: none;
+                }
+              }
+            }
+
+            .counter-div{
+              border-bottom: 1px solid var(--primary);
+              padding: 0px 10px;
+
+              .underline-text{
+                text-decoration: underline;
+                --fw: 700;
+                font-size: 1.5em;
+                margin-bottom: 5px;
+                font-family: var(--font2);
+                text-align: center;
+                margin-bottom: 20px;
+              }
+
+              .p-file-text{
+                font-family: var(--font2);
+                --fw:500;
+                text-align: center;
+                margin-bottom: 20px;
+              }
+
+              .div-btns{
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 5px;
+
+                span{
+                  --fw:700;
+                  font-family: var(--font2);
+                  font-size: 20px;
+                }
+              
+                .counter-btn{
+                  width: 32px!important;
+                  height: 32px!important;
+                  min-height: 1px!important;
+                  min-width: 1px!important;
+                }
+              }
+            }
+          }
+        }
+
+/////////////////////////////////////value3/////////////////////////////////////////
+
+
+        .value3{
+
+          .card-title{
+            width: 550px;
+            background-color: #fff;
+            border-radius: 0px;
+            box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.3)!important;
+            padding: 10px 30px;
+            position: relative;
+            z-index: 99;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            position: absolute;
+            top: 0;
+            left: -100px;
+
+            @include media(max, 630px){
+              max-width: 400px;
+              width: 100%;
+              left: 0;
+            }
+
+            span{
+              text-decoration: underline;
+              --fw: 700;
+              font-size: 1.6em;
+              margin-bottom: 5px;
+              font-family: var(--font2);
+            }
+    
+            p{
+              font-family: var(--font2);
+              --fw: 500;
+              text-align: center;
+            }
+          }
+
+          .content-step3{
+            height: 680px;
+            max-height: 680px;
+            width: 100%;
+            display: grid;
+            place-items: center;
+            padding-top: 150px;
+
+            .div-center{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              gap: 20px;
+
+              .title-none{
+                font-family: var(--font2);
+                --c:#FFf;
+                --fw:500;
+                font-size: 1.3em;
+              }
+            }
+
+            .div-ok-btn1{
+              max-width: 360px;
+              width: 100%;
+              position: relative;
+              display: flex;
+              flex-direction: column;
+
+              .v-btn{
+                width: 100%!important;
+                margin-bottom: 5px!important;
+              }
+
+              .available{
+                --c:red;
+                font-family: var(--font2);
+                font-size: 10px;
+                text-align: right;
+              }
+
+              .text-field-container{
+                margin-bottom: 20px;
+                max-width:340px;
+                width: 100%;
+      
+      
+                .title-textfield{
+                  font-family: var(--font2);
+                  --c:#000;
+                  --fw:500;
+                  font-size: 1.3em;
+                }
+      
+                .input-line{
+                  font-family: var(--font2);
+      
+                  ::placeholder{
+                    color: rgba(0,0,0,0.3);
+                    font-family: var(--font2);    
+                  }
+                }                
+              }
+
+              .input-percent{
+                font-family: var(--font2);
+    
+                ::placeholder{
+                  color: rgba(0,0,0,0.3);
+                  font-family: var(--font2);    
+                }
+              }
+
+              .delete-icon{
+                color: var(--primary)!important;
+              }
+
+            }
+
+            .div-ok-btn2{
+              max-width: 360px;
+              width: 100%;
+              position: relative;
+              display: flex;
+              flex-direction: column;
+
+              .v-btn{
+                width: 100%!important;
+                margin-bottom: 5px!important;
+              }
+
+              .available{
+                --c:red;
+                font-family: var(--font2);
+                font-size: 10px;
+                text-align: right;
+              }
+
+              .text-field-container{
+                margin-bottom: 20px;
+                max-width:340px;
+                width: 100%;
+      
+      
+                .title-textfield{
+                  font-family: var(--font2);
+                  --c:#000;
+                  --fw:500;
+                  font-size: 1.3em;
+                }
+      
+                .input-line{
+                  font-family: var(--font2);
+      
+                  ::placeholder{
+                    color: rgba(0,0,0,0.3);
+                    font-family: var(--font2);    
+                  }
+                }                
+              }
+
+              .input-percent{
+                font-family: var(--font2);
+    
+                ::placeholder{
+                  color: rgba(0,0,0,0.3);
+                  font-family: var(--font2);    
+                }
+              }
+
+              .delete-icon{
+                color: var(--primary)!important;
+              }
+
+            }
+          }
+        }
+
+/////////////////////////////////////value4/////////////////////////////////////////
+
+        .value4{
+
+          .card-title{
+            width: 550px;
+            background-color: #fff;
+            border-radius: 0px;
+            box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.3)!important;
+            padding: 10px 30px;
+            position: relative;
+            z-index: 99;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            position: absolute;
+            top: 0;
+            left: -100px;
+
+            @include media(max, 630px){
+              max-width: 400px;
+              width: 100%;
+              left: 0;
+            }
+
+            span{
+              text-decoration: underline;
+              --fw: 700;
+              font-size: 1.6em;
+              margin-bottom: 5px;
+              font-family: var(--font2);
+              text-align: center;
+              max-width: 80%;
+            }
+          }
+
+          .content-step4{
+            height: max-content;
+            max-height: 680px;
+            width: 100%;
+            display: grid;
+            place-items: center;
+            padding-top: 180px;
+            padding-bottom: 30px;
+
+
+            .goodie-div{
+              max-width: 360px;
+              width: 100%;
+              position: relative;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+
+              .goodie-p{
+                text-align: center;
+                font-family: var(--font2);
+                --fw:500;
+                max-width: 90%;
+              }
+
+              .v-btn{
+                max-width: 150px!important;
+                background-color: #f89f1f!important;
+
+                @include media(max, 490px){
+                  max-width: 120px!important;
+                }
+              }
+
+              .goodie-hidden-div{
+
+                .text-field-container{
+                  margin-bottom: 20px;
+                  max-width:340px;
+                  width: 100%;
+                  margin-top: 20px;
+        
+                  .title-textfield{
+                    font-family: var(--font2);
+                    --c:#000;
+                    --fw:500;
+                    font-size: 1.2em;
+                  }
+        
+                  .input-line{
+                    font-family: var(--font2);
+        
+                    ::placeholder{
+                      color: rgba(0,0,0,0.3);
+                      font-family: var(--font2);
+                      font-size: 12px;  
+                    }
+                  } 
+                }
+
+                .counter-div2{
+                  border-bottom: 1px solid var(--primary);
+                  padding: 0px 0px;
+      
+                  .p-file-text{
+                    font-family: var(--font2);
+                    --c:#000;
+                    --fw:500;
+                    font-size: 1.2em;
+                  }
+    
+                  .div-btns{
+                    display: flex;
+                    justify-content: space-between;
+                    padding-bottom: 5px;
+    
+                    span{
+                      --fw:700;
+                      font-family: var(--font2);
+                      font-size: 20px;
+                    }
+                  
+                    .counter-btn{
+                      width: 32px!important;
+                      height: 32px!important;
+                      min-height: 1px!important;
+                      min-width: 1px!important;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+
+      hr{
+        border-bottom: 10px dashed var(--primary);
+        border-top: none;
+        width: 112%;
+        margin-inline: calc(50% - 50vw);
+        margin-top: 20px;
+      }
+
+      .btn-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: auto 0px auto 0px;
+        gap: 30px;
+        padding-top: 40px;
+
+        @include media(max, 490px){
+          gap: 20px!important;
+        }
+
+        .dark{
+          background-color: var(--primary)!important;
+          width: 160px!important;
+
+          @include media(max, 490px){
+            width: 130px!important;
+          }
+        }
+
+        .light{
+          width: 160px!important;
+
+          @include media(max, 490px){
+            width: 130px!important;
+          }
+        }
+
+      }
+    }
+  }
+}
+
+
+//////////////////////////////////////dialog////////////////////////////////
+/// 
+
+
+.v-dialog{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+
+  .card-dialog{
+    background-color: #fff;
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.3)!important;
+    border-radius: 0px;
+    width: 450px;
+    height: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    @include media(max, 500px){
+      max-width: 300px;
+      width: 100%;
+    }
+
+    .btn-close{
+      background-color: var(--primary);
+      width: 25px;
+      height: 25px;
+      min-height: 20px;
+      min-width: 20px;
+      padding: 0;
+      --c:#fff!important;
+      --fw:500;
+      font-size: 20px!important;
+      right: 10px;
+      top: 10px;
+      position: absolute;
+    }
+
+    .underline-text{
+      text-decoration: underline;
+      --fw: 700;
+      font-size: 1.5em;
+      margin-bottom: 5px;
+      font-family: var(--font2);
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .p-text{
+      font-family: var(--font2);
+      --fw:500;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .red-text{
+      margin-bottom: 0px;
+      --c:var(--secondary);
+      font-family: var(--font2);
+      margin-right: 10px;
+    }
+
+    .go-icon{
+      --c:var(--secondary);
+    }
+
+    hr{
+      border-bottom: 10px dashed var(--primary);
+      border-top: none;
+      width: 100%;
+      margin-inline: calc(50% - 50vw);
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .v-btn:last-of-type{
+      width: 300px!important;
+      margin-top: 20px;
+
+      @include media(max, 500px){
+        width: 150px!important;
+      }
+    }
+  }
+}
+
+
+
+
+////////Barrita transversal del input/////////
+//////////////////////////////////////////////
+
+
+.v-input__slot:before{
+  border-color: var(--primary)!important;
+}
+
+.v-text-field > .v-input__control > .v-input__slot:before, 
+.v-text-field > .v-input__control > .v-input__slot:after {
+  width: 100%;
+}
