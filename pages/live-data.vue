@@ -87,15 +87,13 @@
         <v-data-table
         :headers="headers"
         :items="datos"
-        :items-per-page="itemsPerPage"
         class="mytable"
         hide-default-footer
-        @page-count="pageCount = $event"
         >
           <template #[`item.action`]="{ item }">
-            <v-btn class="btn" id="btn-tabla">
+            <v-btn class="btn" id="btn-tabla" :class="{'change': selectedItems.includes(item)}" @click="toggleSelection(item)">
               {{ item.action }}
-              <v-checkbox></v-checkbox> <span>Approve</span>
+              <v-checkbox v-model="item.selected" class="my-checkbox"></v-checkbox> <span>Approve</span>
             </v-btn>
           </template>
         </v-data-table>
@@ -203,6 +201,7 @@ export default {
             action:'',
           },
       ],
+      selectedItems: [],
     }
   },
   head() {
@@ -212,7 +211,14 @@ export default {
     }
   },
   methods: {
-    
+    toggleSelection(item) {
+      item.selected = !item.selected;
+      if (item.selected) {
+        this.selectedItems.push(item);
+      } else {
+        this.selectedItems.splice(this.selectedItems.indexOf(item), 1);
+      }
+    }
   }
 };
 </script>

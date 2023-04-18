@@ -172,7 +172,13 @@ export default {
     }
   },
   methods: {
-    
+    amountPlus(){
+      this.counter++
+    },
+
+    amountMinus(){
+      this.counter--
+    },
   }
 };
 </script>

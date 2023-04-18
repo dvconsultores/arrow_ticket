@@ -142,10 +142,6 @@
         @include media(max, 390px){width: 200px!important;}
       }
 
-      .btn-create:hover{
-        background-color: var(--secondary)!important;
-      }
-
       .rigth-arrow{
         width: 0; 
         height: 0; 

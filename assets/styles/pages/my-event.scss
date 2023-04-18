@@ -39,6 +39,10 @@
       align-items: center;
       gap: 50px;
 
+      @include media(max, 770px){
+        gap: 10px;
+      }
+
       .autocomplete{
         max-width: 30%;
         background-color: var(--primary);
@@ -124,15 +128,32 @@
     padding-bottom: 100px;
     height: 1100px;
 
+    @include media(max, 1200px){
+      height: 1100px;
+    }
+
+    @include media(max, 770px){
+      height: 3100px;
+      justify-content: flex-start;
+    }
+
     .my-events-div{
       max-width: 1200px;
       width: 100%;
       height: 100px;
-      background-color: green;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+
+      @include media(max, 1200px){
+        flex-direction: row;
+      }
+
+      @include media(max, 770px){
+        max-width: 300px;
+        flex-wrap: wrap;
+      }
 
       .card-header{
         background-color: var(--primary);
@@ -141,6 +162,13 @@
         height: 100px;
         justify-content: center;
         align-items: center;
+        justify-content: flex-start;
+        max-width: 1200px;
+        width: 100%;
+
+        @include media(max, 1200px){
+          display: none;
+        }
 
         .span-title{
           font-family: var(--font2);
@@ -154,11 +182,19 @@
           height: 100px;
           display: grid;
           place-items: center;
+
+          @include media(max, 1260px){
+            width: 190px;
+          }
         }
 
         .empty-div{
           width: 200px;
           height: 100px;
+
+          @include media(max, 1260px){
+            width: 210px;
+          }
         }
       }
 
@@ -173,6 +209,21 @@
         justify-content: center;
         align-items: center;
         border-bottom: 2px solid #e42924;
+
+        @include media(max, 1200px){
+          flex-direction: column;
+          max-height: 1000px!important;
+          height: 1000px!important;
+          min-height: 500px!important;
+          width: 300px!important;
+          padding: 20px;
+        }
+
+        @include media(max, 770px){
+          border-bottom: 2px solid var(--secondary);
+          padding-bottom: 50px;
+          padding-top: 50px;
+        }
 
         .card-photo{
           max-width: 150px;
@@ -208,6 +259,10 @@
               text-decoration: underline;
               font-family: var(--font1);
               --fw:500;
+
+              @include media(max, 770px){
+                font-size: 16px;
+              }
             }
           }
         }
@@ -218,6 +273,11 @@
           height: 130px;
           border-radius: 0px;
           z-index: 0;
+
+          @include media(max, 1200px){
+            width: 130px;
+            height: 40px;
+          }
         }
 
         .card-dates{
@@ -235,6 +295,11 @@
           box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.2)!important;
           z-index: 1;
           background-color: #fff;
+
+          @include media(max, 1200px){
+            width: 150px;
+            height: 250px;
+          }
   
           .day{
             font-family: var(--font1);
@@ -262,6 +327,7 @@
             font-family: var(--font1);
             --fw: 400;
             font-size: 13px;
+            text-align: center;
           }
         }
 
@@ -273,6 +339,11 @@
           z-index: 0;
           position: relative;
           overflow: hidden;
+
+          @include media(max, 1200px){
+            width: 130px;
+            height: 40px;
+          }
   
           hr{
             border-bottom: 7px dashed var(--primary);
@@ -286,6 +357,10 @@
             left: -70px;
             margin: auto;
   
+            @include media(max, 1200px){
+              transform: rotate(0deg);
+              left: 0;
+            }
           }
         }
 
@@ -305,11 +380,27 @@
           z-index: 1;
           background-color: #fff;
 
+          @include media(max, 1200px){
+            width: 150px;
+            height: 250px;
+          }
+
           .span-main{
             --c:#000;
             --fw:400;
             font-size: 28px;
             margin-bottom: 30px;
+          }
+
+          .mobile-title{
+            display: none;
+
+            @include media(max, 770px){
+              display: grid;
+              font-size: 16px;
+              --fw:500;
+              text-transform: uppercase;
+            }
           }
 
           .absolute-div{
@@ -328,7 +419,18 @@
               --c:#000;
               font-family: var(--font1);
               --fw:400;
+
+              @include media(max, 770px){
+                font-size: 16px;
+              }
             }
+          }
+        }
+
+        .no-margin{
+          @include media(max, 1200px){
+            margin-right: 0px!important;
+            margin-bottom: 30px;
           }
         }
 

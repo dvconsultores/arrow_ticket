@@ -270,8 +270,17 @@
       overflow-x: hidden;
       margin-top: 50px;
 
-      .btn-active{
+      .change{
         background-color: #f89f1f!important;
+      }
+
+      .my-checkbox .v-input--selection-controls__input:checked + .v-input--selection-controls__ripple {
+        background-color: transparent !important;
+        border: 2px solid #fff !important;
+      }
+      
+      .my-checkbox .v-icon {
+        color: #fff !important;
       }
     }
 

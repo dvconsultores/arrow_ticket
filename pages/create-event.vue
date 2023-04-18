@@ -1,5 +1,5 @@
 <template>
-  <div id="home">
+  <div id="home" style="padding-top: 150px;">
     <section class="section1-create">
       <h1 class="title-create">
           Create event
@@ -192,7 +192,7 @@
                       {{ counter }}
                     </span>
 
-                    <div>
+                    <div class="divrow" style="gap:10px;">
                       <v-btn class="btn counter-btn" @click="amountMinus()">
                         -
                       </v-btn>
@@ -342,7 +342,7 @@
                           {{ counter2 }}
                         </span>
 
-                        <div>
+                        <div class="divrow" style="gap:10px;">
                           <v-btn class="btn counter-btn" :disabled="counter2 === 0" @click="amountMinus2()">
                             -
                           </v-btn>

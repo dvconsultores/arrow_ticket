@@ -152,7 +152,7 @@ export default {
 
   // Router property -  https://nuxtjs.org/docs/2.x/features/file-system-routing#the-router-property
   router: {
-    base: development ? '/' : '/',
+    base: development ? '/arrow-tickets/' : '/',
     // middleware: ['route-validator'],
   },
 
@@ -163,7 +163,7 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    publicPath: development ? '/' : '/',
+    publicPath: development ? '/arrow-tickets/' : '/',
     plugins: [
       new webpack.ProvidePlugin({
         // global modules

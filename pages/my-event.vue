@@ -89,6 +89,9 @@
           </v-card>
 
           <v-card class="minted-card">
+            <span class="mobile-title">
+              Ticket minted
+            </span>
             <span class="span-main">
               {{ item.minted }}
             </span>
@@ -104,6 +107,9 @@
           </v-card>
 
           <v-card class="minted-card">
+            <span class="mobile-title">
+              Ticket sold
+            </span>
             <span class="span-main">
               {{ item.sold }}
             </span>
@@ -118,7 +124,10 @@
             <hr>
           </v-card>
 
-          <v-card class="minted-card" style="margin-right:40px;">
+          <v-card class="minted-card no-margin" style="margin-right:40px;">
+            <span class="mobile-title">
+              Ticket listed
+            </span>
             <span class="span-main">
               {{ item.listed }}
             </span>
